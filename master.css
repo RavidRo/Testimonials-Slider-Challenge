@@ -1,0 +1,95 @@
+:root {
+    /* Variables */
+    --dark-color: hsl(240, 38%, 20%);
+    --light-color: hsl(240, 18%, 77%);
+
+    font: 300 32px 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+}
+
+.center-alignment-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.center-alignment-item {
+    margin: 0 auto;
+}
+
+.bg-white {
+    background-color: white;
+    margin: 15% 1.5% 15% 4%;
+}
+
+.content {
+    background: bottom left no-repeat url(./images/pattern-curve.svg);
+    padding: 17% 3% 15% 8%;
+    box-shadow: 0 0 15px grey;
+    border-radius: 5px;
+}
+
+/* -----------------Content's Image------------- */
+.content-pattern-bg, .content-img, .buttons-container {
+    float: right;
+    right: 85px;
+}
+
+.buttons-container {
+    position: absolute;
+    right: 500px;
+    bottom: 30px;
+    z-index: 4;
+}
+
+.content-pattern-bg {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.content-img {
+    position: relative;
+    z-index: 2;
+    bottom: 130px;
+    border-radius: 5px;
+}
+
+/* -----------------Text Block----------- */
+.content-text-block {
+    position: relative;
+    z-index: 3;
+}
+
+.content-pattern-quotes {
+    position: absolute;
+    left: 100px;
+    bottom: 230px;
+}
+
+/* The person name and profession */
+.content-name, .content-profession {
+    font-size: 18px;
+}
+
+.content-name {
+    font-weight: 700;
+}
+
+.content-profession {
+    font-weight: 300;
+    color: #c7c7c7;
+}
+
+/* ---------Prev/Next Buttons----------- */
+.nav-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    box-shadow: 0 0 50px 0px grey;
+}
